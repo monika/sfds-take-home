@@ -1,32 +1,32 @@
 {
-  "name": "deventy",
-  "version": "1.3.0",
-  "description": "A minimal 11ty starter with modern tools",
-  "main": "index.js",
+  "name": "sfds-take-home",
+  "version": "1.0.0",
+  "description": "A take-home exercize for SFDS's front-end developer position, using 11ty and Deventy starter.",
+  "main": "index.njk",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
-    "eleventy:default": "npx eleventy",
-    "eleventy:watch": "npx eleventy --watch",
+    "eleventy:default": "yarn eleventy",
+    "eleventy:watch": "yarn eleventy --watch",
     "styles:prod": "node-sass src/styles/ --output dist/styles/ && postcss ./dist/styles/*.css --replace",
     "styles:dev": "node-sass src/styles/ --output dist/styles/ --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
     "scripts:prod": "webpack --mode=production",
     "scripts:dev": "webpack --mode=development",
     "serve": "light-server -c .lightserverrc",
     "dev": "npm-run-all clean styles:dev scripts:dev eleventy:default --parallel eleventy:watch serve --print-label",
-    "dev:debug": "DEBUG=* npm run dev",
+    "dev:debug": "DEBUG=* yarn run dev",
     "build": "run-s clean styles:prod scripts:prod eleventy:default --print-label"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ianrose@github.com/ianrose/deventy.git"
+    "url": "git+https://monika@github.com/monika/sfds-take-home.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ianrose/deventy/issues"
+    "url": "https://github.com/monika/sfds-take-home/issues"
   },
-  "homepage": "https://github.com/ianrose/deventy#readme",
+  "homepage": "https://github.com/monika/sfds-take-home#readme",
   "devDependencies": {
     "light-server": "^2.6.3"
   },
