@@ -1,0 +1,13 @@
+.footer {
+  background: $black;
+  padding: $base-spacing;
+
+  color: $white;
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: -2.5%;
+
+  &__copyright {
+    margin: 0;
+  }
+}
