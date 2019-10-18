@@ -8,9 +8,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ renderData.description or description or metadata.description }}">
   <title>{{ renderData.title or title or metadata.title }}</title>
+  <!-- favicon -->
+  <!-- Social sharing cards -->
   <link rel="stylesheet" href="/styles/index.css">
 </head>
-<body id="top" itemscope itemtype="http://schema.org/WebPage">
+<body>
+
+  <!-- Site Header -->
+
+  <h1>The SFDigital Foundation</h1>
+
+  <nav>
+    <a href="#">About</a>
+    <a href="#">Work with us</a>
+    <a href="#">Our impact</a>
+    <a href="#">Donate</a>
+  </nav>
+
+  <!-- Page Header -->
+
+  <h2>Apply for the 10th annual SFDigital Fellowship</h2>
+
+  <nav>
+    <a href="#">About the fellowship</a>
+    <a href="#">Testimonials</a>
+    <a href="#">Alumni</a>
+    <a href="#">Apply</a>
+  </nav>
+
+  <!-- Content -->
+
+  <h3>What is the SFDigital Fellowship?</h3>
+
+  <p>An opportunity for people in the technology industry to help modernize city government.</p>
+
+  <img src="/images/img-placeholder-865x575.jpg" alt="A person looking at a laptop screen, a cup of coffee nearby and a pen in their hand.">
+
+  <h3>What will fellows work on?</h3>
+
+  <p>SFDigital fellows will work with the city to improve public services. They use technology to make it easier for people to get things done.</p>
+  <p>Fellows work on critical issues like affordable housing, small businesses, legal aid for immigrants, and more. They are also helping to rebuild the city’s website from the ground up. This means taking a service-led approach so that anyone using the site can get what they need.</p>
+  <p>As an SFDigital Fellow, you will re-think how public services are designed, by understanding what our users need and building with an agile approach.</p>
+
+  <h3>How long does the fellowship last?</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Season</th>
+        <th scope="col">Length</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fall</td>
+        <td>10–12 weeks <small>(depends on your start date)</small></td>
+      </tr>
+      <tr>
+        <td>Winter</td>
+        <td>5 weeks</td>
+      </tr>
+      <tr>
+        <td>Spring</td>
+        <td>12–14 weeks <small>(depends on your start date)</small></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Sign up for our newsletter</h4>
+
+  <form action="">
+
+    <label for="form-email">Email address</label>
+    <input id="form-email" type="text">
+
+    <label for="form-discovery">How did you hear about us?</label>
+    <select name="discovery" id="form-discovery">
+      <option value="website">Website</option>
+      <option value="email">Email</option>
+      <option value="word-of-mouth">Word of mouth</option>
+    </select>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <!-- Footer -->
+
+  <p>&copy;2019 SFDigital Foundation</p>
+
   {{ content | safe }}
   <script src="/scripts/index.js"></script>
 </body>
