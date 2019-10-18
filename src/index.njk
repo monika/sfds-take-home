@@ -43,17 +43,19 @@ title: 10th Annual SFDigital Fellowship
       </tr>
     </thead>
     <tbody>
+      {# create a table row for every event in schedule.json #}
+      {% for event in schedule %}
       <tr>
-        <td>Fall</td>
-        <td>10–12 weeks <small>(depends on your start date)</small></td>
+        {# select season using bracket notation because of colon in key name #}
+        <td>{{ event["season:"] | capitalize }}</td>
+        {# display event duration value #}
+        <td>{{ event.duration }}
+          {# show disclaimer if start_date: true #}
+          {% if event.start_date %}
+          <small>(depends on your start date)</small>
+          {% endif %}
+        </td>
       </tr>
-      <tr>
-        <td>Winter</td>
-        <td>5 weeks</td>
-      </tr>
-      <tr>
-        <td>Spring</td>
-        <td>12–14 weeks <small>(depends on your start date)</small></td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
