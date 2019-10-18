@@ -1,107 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <script>
-      document.documentElement.className =
-        document.documentElement.className.replace(/\bno-js\b/g, '') +
-        'has-js ';
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="{{ renderData.description or description or metadata.description }}"
-    />
-    <title>
-      {{ renderData.title or title or metadata.title }} || The SFDigital
-      Foundation
-    </title>
-    <!-- Favicon -->
-    <!-- Social sharing cards -->
-    <link rel="stylesheet" href="/styles/index.css" />
-  </head>
-  <body>
-    <!-- Block: site header -->
-    <div class="site-header">
-      <h1 class="site-header__title">The SFDigital Foundation</h1>
+<html lang="en">
 
-      <!-- Block: Site navigation-->
-      <nav aria-labelledby="site-navigation" class="navigation">
-        <p id="site-navigation">Site Navigation</p>
-        <a class="navigation__link" href="#">About</a>
-        <a class="navigation__link" href="#">Work with us</a>
-        <a class="navigation__link" href="#">Our impact</a>
-        <a class="navigation__link navigation__link--emphasis" href="#"
-          >Donate</a
-        >
-      </nav>
-    </div>
+  {% include "head.njk" %}
+
+  <body>
+
+    <!-- Block: site header -->
+    {% include "blocks/site-header.njk" %}
 
     <!-- Block: Page Header -->
-    <div class="page-header">
-      <h2 class="page-header__title">
-        Apply for the 10th annual SFDigital Fellowship
-      </h2>
-    </div>
+    {% include "blocks/page-header.njk" %}
 
     <!-- Layout: Page content-->
     <div class="page">
+
       <!-- Layout: Sidebar-->
       <div class="sidebar">
+
         <!-- Block: Sub navigation-->
-        <nav aria-labelledby="section-navigation" class="sub-nav">
-          <p id="section-navigation">Section Navigaton</p>
-          <a class="sub-nav__link sub-nav__link--selected" href="#"
-            >About the fellowship</a
-          >
-          <a class="sub-nav__link" href="#">Testimonials</a>
-          <a class="sub-nav__link" href="#">Alumni</a>
-          <a class="sub-nav__link" href="#">Apply</a>
-        </nav>
+        {% include "blocks/sub-nav.njk" %}
+
       </div>
       <!-- / .sidebar-->
 
       <!-- Layout: Main content-->
       <div class="main">
+
         <!-- Page Content -->
         {{ content | safe }}
 
         <!-- Block: Newsletter-->
-        <div class="newsletter">
-          <h4 class="newsletter__title">Sign up for our newsletter</h4>
+        {% include "blocks/newsletter.njk" %}
 
-          <form action="">
-            <label class="newsletter__label" for="form-email"
-              >Email address</label
-            >
-            <input class="newsletter__input" id="form-email" type="text" />
-
-            <label class="newsletter__label" for="form-discovery"
-              >How did you hear about us?</label
-            >
-            <select
-              class="newsletter__select"
-              name="discovery"
-              id="form-discovery"
-            >
-              <option value="website">Website</option>
-              <option value="email">Email</option>
-              <option value="word-of-mouth">Word of mouth</option>
-            </select>
-
-            <input class="button" type="submit" value="Submit" />
-          </form>
-        </div>
       </div>
       <!--/ .content -->
     </div>
     <!-- / .page -->
 
     <!-- Block: Footer -->
-    <div class="footer">
-      <p class="footer__copyright">&copy;2019 SFDigital Foundation</p>
-    </div>
+    {% include "blocks/footer.njk" %}
 
     <script src="/scripts/index.js"></script>
+
   </body>
 </html>
