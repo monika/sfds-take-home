@@ -1,0 +1,79 @@
+////
+/// Breakpoints
+////
+
+// Breakpoint Boundaries
+// @type length
+// These correspond to the Bootstrap 4 Responsive Breakpoints
+
+// Lower boundaries
+// ----------------
+
+/// Screen XS Min
+$screen-xs-min: 0px;
+
+/// Screen SM Min
+$screen-sm-min: 576px;
+
+/// Screen MD Min
+$screen-md-min: 768px;
+
+/// Screen LG Min
+$screen-lg-min: 1024px;
+
+/// Screen XL Min
+$screen-xl-min: 1440px;
+
+// Upper boundaries
+// ----------------
+
+/// Screen XS Max
+$screen-xs-max: $screen-sm-min - 1px;
+
+/// Screen SM Max
+$screen-sm-max: $screen-md-min - 1px;
+
+/// Screen MD Max
+$screen-md-max: $screen-lg-min - 1px;
+
+/// Screen LG Max
+$screen-lg-max: $screen-xl-min - 1px;
+
+/// Custom neat grids:
+
+/// Media XS only
+$media-xs: $screen-xs-min;
+
+$media-xs-only: 'only screen and (max-width: #{$screen-xs-max})';
+
+$media-xs-max: 'only screen and (max-width: #{$screen-xs-max})';
+
+/// Media SM
+$media-sm: 'only screen and (min-width: #{$screen-sm-min})';
+
+/// Media SM only
+$media-sm-only: 'only screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})';
+
+/// Media SM max
+$media-sm-max: 'only screen and (max-width: #{$screen-sm-max})';
+
+/// Media MD
+$media-md: 'only screen and (min-width: #{$screen-md-min})';
+
+/// Media MD only
+$media-md-only: 'only screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})';
+
+/// Media MD max
+$media-md-max: 'only screen and (max-width: #{$screen-md-max})';
+
+/// Media LG
+$media-lg: 'only screen and (min-width: #{$screen-lg-min})';
+
+/// Media LG only
+$media-lg-only: 'only screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max})';
+
+/// Media LG max
+$media-lg-max: 'only screen and (max-width: #{$screen-lg-max})';
+
+/// Media XL
+$media-xl: 'only screen and (min-width: #{$screen-xl-min})';
