@@ -1,6 +1,6 @@
 # SFDS - Front-End Take-Home Assignment
 
-## Powered by: Deventy & 11ty
+## Powered by: 11ty & Deventy
 
 [Deventy](https://github.com/ianrose/deventy) is a minimal [11ty](https://www.11ty.io) starting point for building static websites with modern tools. Uses the CLI of each tool. Allowing a much easier upgrade path for each individual development tool.
 
