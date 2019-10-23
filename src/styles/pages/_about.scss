@@ -1,0 +1,30 @@
+// About Page
+#page-about {
+  .main {
+    img {
+      display: block;
+      max-width: 100%;
+    }
+    table {
+      width: 100%;
+      tr {
+        th {
+          text-align: left;
+          border-bottom: 2px solid $black;
+          padding: $base-spacing;
+          padding-left: 0;
+        }
+        td {
+          border-bottom: 1px solid $black;
+          padding: $base-spacing;
+          padding-left: 0;
+
+          small {
+            display: block;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

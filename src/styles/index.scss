@@ -12,6 +12,9 @@
 @import 'blocks/newsletter';
 @import 'blocks/footer';
 
+// Page-specific Styling
+@import 'pages/about';
+
 // Making a clarifying object only available to screen readers
 // https://a11yproject.com/posts/how-to-hide-content/
 .visually-hidden {

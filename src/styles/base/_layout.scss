@@ -4,3 +4,23 @@ body {
   min-height: 100vh;
   background-color: $white;
 }
+
+.content {
+  padding: 0 45px;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 33%;
+}
+
+.main {
+  @extend .content;
+  width: 66%;
+}
