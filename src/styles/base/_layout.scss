@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: left;
   padding-top: $base-spacing * 2;
   padding-bottom: $base-spacing * 4;
   padding-right: 45px;
@@ -21,7 +21,7 @@ body {
 
 .sidebar {
   width: 33%;
-  padding-right: 45px;
+  padding-right: 80px;
 }
 
 .main {
