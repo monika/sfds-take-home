@@ -1,4 +1,18 @@
 .site-header {
+  @extend .content;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+
   color: $white;
   background: $indigo;
+
+  &__title {
+    margin: 0;
+    text-align: left;
+  }
 }

@@ -1,7 +1,12 @@
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   &__link {
     color: $white;
     text-decoration: none;
+    margin: 0 $base-spacing/2;
     &:hover {
       text-decoration: underline;
     }
@@ -11,11 +16,16 @@
     color: $indigo;
     background: $white;
     border-radius: $border-radius;
-    transition: all ease-in 0.2s;
+    transition: all ease-in 0.15s;
+    padding: $base-spacing/2;
     &:hover {
       text-decoration: none;
       color: $white;
       background-color: $black;
     }
+  }
+
+  &__button {
+    display: none;
   }
 }
