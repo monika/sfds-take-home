@@ -1,15 +1,15 @@
 .site-header {
-  @extend .content;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   padding-top: $base-spacing;
   padding-bottom: $base-spacing;
-
   color: $white;
   background: $indigo;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__title {
     margin: 0;
