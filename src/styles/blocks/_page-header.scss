@@ -1,7 +1,9 @@
 .page-header {
   @extend .content;
   color: $white;
-  background: $indigo no-repeat cover;
+  background-color: $indigo;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url('../images/bg-header.jpg');
 
   &__title {
