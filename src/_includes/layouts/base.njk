@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 
-  {% include "head.njk" %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ renderData.description or description or metadata.description }}"/>
 
-  <body id="page-about">
+  <title>{{ renderData.title or title or metadata.title }} || The SFDigital Foundation</title>
+  <!-- Favicon -->
 
-    <!-- Block: site header -->
-    {% include "blocks/site-header.njk" %}
+  <!-- Website typeface -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet" />
 
-    <!-- Block: Page Header -->
-    {% include "blocks/page-header.njk" %}
+  <link rel="stylesheet" href="/styles/index.css" />
 
-    <!-- Layout: Page content-->
-    <div class="page container">
+</head>
+<body id="page-about">
 
-      <!-- Layout: Sidebar-->
-      <div class="sidebar">
+  <!-- Block: site header -->
+  {% include "blocks/site-header.njk" %}
 
-        <!-- Block: Sub navigation-->
-        {% include "blocks/sub-navigation.njk" %}
+  <!-- Block: Page Header -->
+  {% include "blocks/page-header.njk" %}
 
-      </div>
-      <!-- / .sidebar-->
+  <!-- Layout: Page content-->
+  <div class="page">
 
-      <!-- Layout: Main content-->
-      <div class="main">
+    <!-- Layout: Sidebar-->
+    <div class="sidebar">
 
-        <!-- Page Content -->
-        {{ content | safe }}
+      <!-- Block: Sub navigation-->
+      {% include "blocks/sub-navigation.njk" %}
 
-        <!-- Block: Newsletter-->
-        {% include "blocks/newsletter.njk" %}
-
-      </div>
-      <!--/ .main -->
     </div>
-    <!-- / .page -->
+    <!-- / .sidebar-->
 
-    <!-- Block: Footer -->
-    {% include "blocks/footer.njk" %}
+    <!-- Layout: Main content-->
+    <div class="main">
 
-    <script src="/scripts/index.js"></script>
+      <!-- Page Content -->
+      {{ content | safe }}
 
-  </body>
+      <!-- Block: Newsletter-->
+      {% include "blocks/newsletter.njk" %}
+
+    </div>
+    <!--/ .main -->
+  </div>
+  <!-- / .page -->
+
+  <!-- Block: Footer -->
+  {% include "blocks/footer.njk" %}
+
+  <script src="/scripts/index.js"></script>
+
+</body>
 </html>
