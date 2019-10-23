@@ -4,10 +4,12 @@
   align-items: center;
 
   &__link {
+    font-size: 2rem;
     color: $white;
     text-decoration: none;
     margin: 0 $base-spacing/2;
     &:hover {
+      color: $white;
       text-decoration: underline;
     }
   }
