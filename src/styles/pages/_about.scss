@@ -12,22 +12,19 @@
       width: 100%;
       th {
         text-align: left;
-        border-bottom: 2px solid $black;
+        border-bottom: 2px solid $grey;
         padding: $base-spacing;
         padding-left: 0;
       }
       td {
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid $grey;
         padding: $base-spacing;
         padding-left: 0;
 
-        &:first-child {
-          width: 20%;
-        }
-
         small {
           display: block;
-          font-size: 1.4rem;
+          font-size: 2rem;
+          color: $grey;
         }
       }
     }
