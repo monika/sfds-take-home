@@ -1,7 +1,7 @@
 // About Page
 #page-about {
   .main {
-    h3 {
+    h3:first-of-type {
       margin-top: 0;
     }
     img {
@@ -10,22 +10,24 @@
     }
     table {
       width: 100%;
-      tr {
-        th {
-          text-align: left;
-          border-bottom: 2px solid $black;
-          padding: $base-spacing;
-          padding-left: 0;
-        }
-        td {
-          border-bottom: 1px solid $black;
-          padding: $base-spacing;
-          padding-left: 0;
+      th {
+        text-align: left;
+        border-bottom: 2px solid $black;
+        padding: $base-spacing;
+        padding-left: 0;
+      }
+      td {
+        border-bottom: 1px solid $black;
+        padding: $base-spacing;
+        padding-left: 0;
 
-          small {
-            display: block;
-            font-size: 1.4rem;
-          }
+        &:first-child {
+          width: 20%;
+        }
+
+        small {
+          display: block;
+          font-size: 1.4rem;
         }
       }
     }
