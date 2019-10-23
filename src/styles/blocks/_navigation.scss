@@ -16,8 +16,9 @@
     color: $indigo;
     background: $white;
     border-radius: $border-radius;
-    transition: all ease-in 0.15s;
     padding: $base-spacing/2;
+    transition: all ease-in 150ms;
+
     &:hover {
       text-decoration: none;
       color: $white;

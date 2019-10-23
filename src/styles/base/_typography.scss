@@ -7,7 +7,6 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-display: fallback;
   font-weight: 400;
-  letter-spacing: -1.5%;
   line-height: 1.5;
   font-size: 2.4rem;
 }
@@ -33,4 +32,32 @@ h2 {
 
 h3 {
   font-size: 4.8rem;
+}
+
+a {
+  color: $indigo;
+  transition: color ease-in 150ms;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.button {
+  font-family: 'Work Sans', sans-serif;
+  font-display: fallback;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 2.4rem;
+  padding: 0 $base-spacing;
+  color: $white;
+  background: $indigo;
+  border-radius: $border-radius;
+
+  transition: background-color ease-in 150ms;
+
+  &:hover {
+    color: $white;
+    background: $black;
+  }
 }

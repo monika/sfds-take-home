@@ -1,0 +1,25 @@
+form {
+  label {
+    display: block;
+    font-size: 2.4rem;
+  }
+
+  input[type='text'],
+  select {
+    border: 2px solid $black;
+    border-radius: $border-radius;
+    font-size: 1.8rem;
+    font-family: 'Work Sans', sans-serif;
+    font-display: fallback;
+    font-weight: 400;
+    padding: $base-spacing/2;
+  }
+
+  input[type='submit'] {
+    @extend .button;
+
+    display: block;
+    outline: none;
+    cursor: pointer;
+  }
+}
