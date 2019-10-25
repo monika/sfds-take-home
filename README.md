@@ -15,6 +15,17 @@ Features:
 - [CSSnano](https://cssnano.co/)
 - [Autoprefixer](https://github.com/postcss/autoprefixer)
 
+### Next Steps
+
+- [ ] Finish newsletter form design
+  - [ ] Error/info/success messaging
+  - [ ] Style `<select>` better with full style reset
+  - [ ] Add `svg` icon
+- [ ] Add `svg` icon to sub-nav
+- [ ] Add transitions for `:hover` on nav and sub-nav items
+- [ ] Style `:focus` better
+- [ ] Style current navigation item
+
 ### Getting Started
 
 Install all dependencies using Yarn:
