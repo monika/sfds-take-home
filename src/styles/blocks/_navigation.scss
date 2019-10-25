@@ -8,6 +8,7 @@
     color: $white;
     text-decoration: none;
     margin: 0 $base-spacing/2;
+    white-space: nowrap;
     &:hover {
       color: $white;
       text-decoration: underline;
@@ -17,7 +18,7 @@
   &__link--emphasis {
     color: $indigo;
     background: $white;
-    border-radius: $border-radius;
+    border-radius: $base-border-radius;
     padding: $base-spacing/2;
     transition: all ease-in 150ms;
 

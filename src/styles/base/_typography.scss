@@ -52,8 +52,8 @@ a {
   padding: 0 $base-spacing;
   color: $white;
   background: $indigo;
-  border-radius: $border-radius;
-
+  border-radius: $base-border-radius;
+  border: none;
   transition: background-color ease-in 150ms;
 
   &:hover {

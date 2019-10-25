@@ -7,7 +7,7 @@ form {
   input[type='text'],
   select {
     border: 2px solid $black;
-    border-radius: $border-radius;
+    border-radius: $base-border-radius;
     font-size: 1.8rem;
     font-family: 'Work Sans', sans-serif;
     font-display: fallback;
