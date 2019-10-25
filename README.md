@@ -49,6 +49,10 @@ The local url is configured in `.lightserverrc`
 yarn run build
 ```
 
+#### To Review
+
+All commits to `master` branch are automatically deployed via Netlify to [mhoex-sfds-take-home.netlify.com](https://mhoex-sfds-take-home.netlify.com/)
+
 ### Next Steps
 
 - [ ] Finish newsletter form design
