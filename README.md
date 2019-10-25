@@ -1,4 +1,4 @@
-# SFDS - Front-End Take-Home Assignment
+# SF Digital Services - Front-end Take-home Assignment
 
 ## Powered by: 11ty & Deventy
 
