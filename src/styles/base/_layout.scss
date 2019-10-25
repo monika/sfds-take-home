@@ -31,13 +31,14 @@ body {
   @media #{$media-lg} {
     width: 33%;
     padding-bottom: 0;
-    padding-right: 80px;
+    padding-right: $base-spacing * 5;
   }
 }
 
 .main {
   @media #{$media-lg} {
     width: 66%;
+    // So our line lengths aren't too long
     max-width: 720px;
   }
 }
