@@ -1,7 +1,13 @@
 .navigation {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media #{$media-lg} {
+    justify-content: right;
+    flex-wrap: nowrap;
+  }
 
   &__link {
     font-size: 2rem;
