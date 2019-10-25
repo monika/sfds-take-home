@@ -51,7 +51,7 @@ yarn run build
 
 #### To Review
 
-All commits to `master` branch are automatically deployed via Netlify to [mhoex-sfds-take-home.netlify.com](https://mhoex-sfds-take-home.netlify.com/)
+All commits to `master` are automatically deployed via Netlify to: [mhoex-sfds-take-home.netlify.com](https://mhoex-sfds-take-home.netlify.com/)
 
 ### Next Steps
 
