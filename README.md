@@ -55,7 +55,7 @@ All commits to `master` are automatically deployed via Netlify to: [mhoex-sfds-t
 
 ### Next Steps
 
-- [ ] Finish newsletter form design
+- [ ] Finish newsletter form styling
   - [ ] Error/info/success messaging
   - [ ] Style `<select>` better with full style reset
   - [ ] Add `svg` icon
