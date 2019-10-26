@@ -63,3 +63,4 @@ All commits to `master` are automatically deployed via Netlify to: [mhoex-sfds-t
 - [ ] Add transitions for `:hover` on nav and subnav items
 - [ ] Style `:focus` better
 - [ ] Style current navigation item
+- [ ] Add favicon
