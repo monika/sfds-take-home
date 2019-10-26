@@ -1,4 +1,4 @@
-# SFDS - Front-End Take-Home Assignment
+# SF Digital Services - Front-end Take-home Assignment
 
 ## Powered by: 11ty & Deventy
 
@@ -51,11 +51,11 @@ yarn run build
 
 #### To Review
 
-All commits to `master` branch are automatically deployed via Netlify to [mhoex-sfds-take-home.netlify.com](https://mhoex-sfds-take-home.netlify.com/)
+All commits to `master` are automatically deployed via Netlify to: [mhoex-sfds-take-home.netlify.com](https://mhoex-sfds-take-home.netlify.com/)
 
 ### Next Steps
 
-- [ ] Finish newsletter form design
+- [ ] Finish newsletter form styling
   - [ ] Error/info/success messaging
   - [ ] Style `<select>` better with full style reset
   - [ ] Add `svg` icon
@@ -63,3 +63,4 @@ All commits to `master` branch are automatically deployed via Netlify to [mhoex-
 - [ ] Add transitions for `:hover` on nav and subnav items
 - [ ] Style `:focus` better
 - [ ] Style current navigation item
+- [ ] Add favicon
