@@ -17,13 +17,17 @@
 </head>
 <body id="page-about">
 
-  <!-- Block: site header -->
-  {% include "blocks/site-header.njk" %}
+  <header class="header">
 
-  <!-- Block: Page Header -->
-  {% include "blocks/page-header.njk" %}
+    <!-- Block: Site header -->
+    {% include "blocks/site-header.njk" %}
 
-  <!-- Layout: Page content-->
+    <!-- Block: Page Header -->
+    {% include "blocks/page-header.njk" %}
+
+  </header>
+
+  <!-- Layout: Main page-->
   <main class="page">
 
     <!-- Layout: Sidebar-->
@@ -35,8 +39,8 @@
     </div>
     <!-- / .sidebar-->
 
-    <!-- Layout: Main content-->
-    <div class="main">
+    <!-- Layout: Content-->
+    <div class="content">
 
       <!-- Page Content -->
       {{ content | safe }}
@@ -45,7 +49,8 @@
       {% include "blocks/newsletter.njk" %}
 
     </div>
-    <!--/ .main -->
+    <!--/ .content -->
+
   </main>
   <!-- / .page -->
 
